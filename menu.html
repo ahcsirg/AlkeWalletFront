@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onePage</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\_variables.scss">
+</head>
+<body id="indexbody">
+  <header><nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="img\logo\3ZOWoK-LogoMakr.png" alt="Bootstrap" width="180" height="30">
+          </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="deposit.html">Depositos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sendmoney.html">Transferencias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="digital_wallet.html">Digital Wallet</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Operaciones
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">compra de alkecoins</a></li>
+                <li><a class="dropdown-item" href="#">venta de alkecoins</a></li>
+                <li><a class="dropdown-item" href="#">comportamiento de alkecoins</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="transactions.html">Transacciones</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <button class="btn btn-primary" id="logoutBtn" type="button"  onclick="cerrarSesion()">Cerrar sesión</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </header>
+    <br><br><br><br><br>
+    <div class="row row-cols-1 row-cols-md-6 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="img\index_fondo\SL-110820-37810-11.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Transferencias</h5>
+            <p class="card-text">Proporcionar la dirección de la billetera del destinatario.</p>
+            <a href="sendmoney.html" class="btn btn-primary">Transferir AW</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img\fondos menu card\deposito_w.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Depositos</h5>
+            <p class="card-text">Selecciona la AW y su monto y da clic en Depositar.</p>
+            <a href="deposit.html" class="btn btn-primary">Depositar AW</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img\fondos menu card\wallet_w.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Digital Wallet</h5>
+            <p class="card-text">Ver los datos de la tarjeta digital y ocultar los mismos con jquery.</p>
+            <a href="digital_wallet.html" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img\fondos menu card\transacciones_w.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Transacciones</h5>
+            <p class="card-text">Visualiza un datagrid o un table con datos de ejemplo.</p>
+            <a href="transactions.html" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img\index_fondo\SL-110820-37810-11.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Compra de AW</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img\index_fondo\SL-110820-37810-11.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Venta de AW</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit..</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+
+
+    <script src="js/js.js"></script>
+    <script src="js\bootstrap.bundle.min.js"></script>
+
+
+   
+</body>
+</html>
